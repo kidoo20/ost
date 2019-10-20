@@ -1,0 +1,6 @@
+import mysql db
+db:mysqldb.connect(host="localhost",user="root",password="root",db="pythonpost")
+curr=db.cursor()
+curr.execute(select *from examples)
+for row in  curr.g(f)etchar():
+print row[0]","row[1]
