@@ -1,0 +1,3 @@
+qemu -img create ubuntu.img 20G
+qemu -img ceae -f qcow2 ubuntu.q cow 20G
+qemu -system -x86 -64 -hda ubuntu img-boot d -cdrom/home/student/Downloads/ubuntu-16.04.6 server-amd 64.iso -m 640
