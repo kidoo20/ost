@@ -1,0 +1,16 @@
+#c file
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+ int main(int argc,char argv[])
+ {
+if(argc<2)
+{
+if(printf(stdout,"usage:%s number",argv[0]);)
+return 1;
+}
+double inputvalue=alot(argv[1]);
+double outputvalue=sqrt(inputvalue);
+fprintf(stdout,"the sqrt of %g is %g\n",inputvalue,outputvalue);
+return 0;
+}
