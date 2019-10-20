@@ -14,3 +14,23 @@ double outputvalue=sqrt(inputvalue);
 fprintf(stdout,"the sqrt of %g is %g\n",inputvalue,outputvalue);
 return 0;
 }
+
+#compiling
+gcc squareroot.c -o squareroot -lm
+./squareroot 25
+
+#make file
+cc=gcc
+cflags= -g
+ldflags=-lm
+all:squareroot
+squareroot:squareroot.o
+squareroot:o.squareroot.c
+clean:
+rm-f squareroot squareroot.o
+#compiling
+
+gcc -lm squareroot.o -o squareroot
+./squareroot 25
+
+gcc sqrt.c -o sqrt -lm
